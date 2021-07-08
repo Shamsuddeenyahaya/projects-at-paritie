@@ -1,0 +1,275 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(26, 26, 29);
+}
+nav{
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo > img{
+    max-width: 80%;
+    cursor: pointer;
+}
+.nav-bar a{
+margin-left: 1rem;
+font-size: 1.1rem;
+color: white;
+max-width: 100%;
+}
+.nav-bar a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.main, .one{
+    margin: 0 20%;
+}
+.one img{
+    max-width: 100%;
+}
+
+.one h1{
+    text-align: center;  
+    color: white;
+    margin-top: 1rem;
+    
+}
+.one p{
+     text-align: center;  
+    color: white;
+    margin-top: 1rem;
+}
+.bnt{
+    margin: 0 40%;
+    margin-top: 2rem;
+    padding: .9rem;
+    max-width: 100%;
+    border-radius: 30px;
+    background: rgb(20, 151, 160);
+    color: white;
+    display: grid;
+    place-content: center   ;
+}
+.bnt:hover{
+background: rgb(112, 9, 141);
+color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    margin-top: 3rem;
+}
+.grid h3{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+.grid p{
+    font-size: .7rem;
+    color: grey;
+      text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+.grid img{
+ margin: 0 42%;
+ margin-top: 1.9rem;
+}
+.grow{
+    display: flex; 
+    margin: 0 5%;
+    margin-top: 4rem;
+}
+.image img{
+        max-width: 100%;
+}
+.grow h1{
+    color: white;
+    margin: 0 8%;
+    margin-top: 5rem;
+}
+.grow p{
+
+    /* text-align: center; */
+    text-justify:auto;
+    color: white;
+    margin: 0 8%;
+    margin-top: .8rem;
+
+
+}
+#icon{
+    max-width: 100%;
+}
+.grow a{
+    /* text-justify: auto; */
+    /* margin: 1px 8%; */
+    margin-left: 2.2rem;
+padding: 1em;
+color: violet;
+}
+.grow a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 12%;
+    margin-top: 4rem;
+    grid-gap: 10px;
+
+}
+.grid2 article{
+    background: darkslategrey;
+    padding: 10px;
+
+}
+#only{
+    position: relative;
+}
+.grid2 #only::before{
+    content: url(./images/bg-quotes.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 15%;
+    right:1% ;
+    z-index: -1;
+}
+.grid2 p{
+    color: white;
+    font-size: .8rem;
+    /* margin-top: 4rem; */
+    padding: 10px;
+
+}
+.photo{
+    display: flex;
+    /* justify-content: center; */
+}
+.photo img{
+    border-radius: 50%;
+    max-width: 50%;
+}
+#ceo{
+    margin-left: -4rem;
+}
+.container1{
+    margin: 0 23%;
+    margin-top: 5rem;
+    color: white;
+    background: darkslategrey;
+padding: 3rem;
+}
+.container1 p{
+    padding: 10px;
+}
+.butt{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    padding:.8rem;
+    border-radius: 30px;
+   max-width: 100%;
+}
+button{
+    padding: .8rem;
+     border-radius: 30px;
+    max-width: 90%;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    background: rgb(139, 185, 181);
+    grid-gap: 10px;
+    min-height:150px;
+    place-items: center;
+    color: #fff;
+    margin: 0 0px;
+}
+.container-grid > div{
+    margin: 0 10px;
+    /* padding: 10px; */
+}
+.navigation-section{
+}
+#llogo{
+    margin-top: 3rem;
+}
+.container-grid > p{
+    margin-top: 10px;
+}
+    
+.attribution{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 640px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 10%;
+    /* grid-auto-flow: row; */
+    grid-auto-rows: row;
+    margin-top: 3rem;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 12%;
+    margin-top: 4rem;
+    grid-gap: 10px;
+
+}
+.butt{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* margin-top: 1rem; */
+}
+button{
+    padding: .8rem;
+     border-radius: 30px;
+    max-width: 80%;
+    margin-top: .5rem;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(30, 52, 94);
+    grid-gap: 10px;
+    min-height:150px;
+    place-items: center;
+    color: #fff;
+    margin: 0 0px;
+}
+}
+@media screen and (max-width: 805px) {
+.grow{
+    display: flex; 
+    margin: 0 5%;
+    margin-top: 4rem;
+    flex-direction: column;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+}
+}
