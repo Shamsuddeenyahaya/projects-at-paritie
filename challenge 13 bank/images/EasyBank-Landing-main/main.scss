@@ -1,0 +1,278 @@
+    @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+    $gradient:linear-gradient(to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%));
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-family: 'Public Sans';
+        // background: #000 !important;
+        // color: #0f0 !important;
+        // outline: solid #f00 1px !important;
+    }
+    
+    .navbar-desk {
+        display: none;
+    }
+    
+    .navbar-desk.active {
+        .logo-desk {
+            display: none;
+        }
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 16%;
+        left: 5%;
+        right: 5%;
+        background-color: white;
+        z-index: 99;
+        padding: 1em 0;
+        box-shadow: 0 -5em 10em 200px hsla(233,
+        26%,
+        24%,
+        .95);
+        border-radius: .5em;
+        animation: fadeIn .3s ease-in-out;
+        ul {
+            display: grid;
+            place-items: center;
+            list-style-type: none;
+        }
+        li {
+            padding: .5em;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: hsl(233, 26%, 24%);
+            font-weight: 400;
+        }
+        .nav-link-desk {
+            display: none;
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .navbar-mobile {
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 1.5em 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .hero-container {
+        display: grid;
+        max-width: 100%;
+        background: url("../images/bg-intro-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        place-items: center;
+        overflow: hidden;
+        .hero-img {
+            width: 90%;
+            transform: translateY(-13%);
+        }
+    }
+    
+    .hero-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .intro {
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding-bottom: 5em;
+        h1 {
+            color: hsl(233, 26%, 24%);
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 400;
+            padding: 0 .5em;
+        }
+    }
+    
+    .content {
+        font-weight: 300;
+        color: hsl(233, 8%, 62%);
+        line-height: 1.6;
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1rem;
+    }
+    
+    .btn,
+    .footer-btn {
+        border-radius: 2em;
+        text-decoration: none;
+        color: white;
+        background: $gradient;
+        padding: 1em 2.5em;
+        margin: 1.5em 0;
+    }
+    
+    .footer-btn {
+        margin: 0;
+    }
+    
+    .features {
+        padding: 5em 1em;
+        text-align: center;
+        background-color: hsl(220, 16%, 96%);
+        .inside {
+            padding-bottom: 3em;
+        }
+        .inside:last-child {
+            padding-bottom: 0;
+        }
+        .content {
+            padding-top: 0;
+        }
+    }
+    
+    .headings {
+        font-size: 2rem;
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+        padding-bottom: .6em;
+    }
+    
+    .subheading {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+        padding: 1em 0;
+    }
+    
+    .online-banking {
+        padding-top: 3em;
+    }
+    
+    .articles {
+        padding: 4em 1.5em;
+        background-color: hsl(0, 0%, 98%);
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: .5em;
+            border-top-right-radius: .5em;
+        }
+    }
+    
+    h2 {
+        color: hsl(233, 26%, 24%);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 1em 0;
+    }
+    
+    article {
+        padding-bottom: 2em;
+        background-color: white;
+        margin-bottom: 2em;
+    }
+    
+    .article {
+        // width: 100%;
+        padding: 0 1em;
+        text-align: left;
+        padding-top: 1.5em;
+        blockquote {
+            color: gray;
+            font-size: .75rem;
+            padding-bottom: 1em;
+        }
+    }
+    
+    .article-heading {
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: hsl(233, 26%, 24%);
+    }
+    
+    .article-content {
+        text-align: left;
+        font-size: .85rem;
+    }
+    
+    footer {
+        background-color: hsl(233, 26%, 24%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 3em 1em;
+        #easybank {
+            fill: white;
+        }
+        .logo {
+            padding-bottom: 2em;
+        }
+        .social-links {
+            img {
+                width: 24px;
+            }
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .footer-nav {
+        padding: 2em 0;
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        li {
+            padding: .5em 0;
+        }
+        a {
+            color: hsl(220, 16%, 96%);
+            text-decoration: none;
+        }
+    }
+    
+    .footer-btn {
+        margin-bottom: 2em;
+    }
+    
+    .copyright {
+        color: hsl(233, 8%, 62%);
+    }
+    
+    .attribution {
+        text-align: center;
+        color: hsl(233, 8%, 62%);
+        span {
+            color: white;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    
+    @import "_responsive";

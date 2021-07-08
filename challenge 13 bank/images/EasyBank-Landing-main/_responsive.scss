@@ -1,0 +1,184 @@
+@media(min-width:768px) {
+    .navbar-mobile {
+        display: none;
+    }
+    .navbar-desk {
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        background-color: white;
+        z-index: 100;
+    }
+    .logo-desk {
+        align-self: center;
+    }
+    nav {
+        align-self: center;
+    }
+    .nav-links {
+        display: flex;
+        width: 60%;
+        list-style-type: none;
+        justify-content: space-around;
+        margin: 0 auto;
+        a {
+            text-decoration: none;
+            color: hsl(233, 26%, 24%);
+            padding-bottom: .5em;
+            transition: ease-in-out .1s;
+        }
+        a:hover {
+            border-bottom: 3px solid hsl(233, 26%, 24%);
+        }
+    }
+    .nav-link-desk {
+        grid-column: 3/4;
+    }
+    .btn.nav-link-desk {
+        text-align: center;
+        margin: .8em 0;
+        padding: 0;
+        padding: 1em 0;
+        width: 80%;
+        justify-self: center;
+    }
+    //navbar is the above code..
+    //main-content starts here..
+    .hero-container {
+        width: 100%;
+        height: 100%;
+        background: url("../images/bg-intro-desktop.svg");
+        background-position: center left;
+        grid-column: 2/3;
+        overflow: hidden;
+        // z-index: -1;
+        .hero-img {
+            margin-right: -30%;
+            z-index: 1;
+        }
+    }
+    .hero-sub {
+        grid-row: 1/2;
+        align-items: flex-start;
+        width: 60%;
+        h1 {
+            text-align: left;
+            padding-left: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .content {
+            text-align: left;
+        }
+    }
+    .intro {
+        display: grid;
+        // grid-template-columns: 45% 55%;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+        height: 40em;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .features {
+        display: grid;
+        padding: 5em 10%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr;
+        column-gap: 1em;
+        grid-template-areas: "why why . .";
+    }
+    .why {
+        grid-column: 1/3;
+        h2 {
+            text-align: left;
+        }
+    }
+    .inside {
+        // padding-top: 2em;
+        padding-bottom: 0;
+        grid-row: 2/3;
+        text-align: left;
+        &.online-banking,
+        &.simple-budgeting,
+        &.fast-onboarding,
+        &.Open-Api {
+            padding-top: 2em;
+            padding-bottom: 0em;
+        }
+    }
+    .subheading {
+        text-align: left;
+    }
+    .content {
+        text-align: left;
+    }
+    .articles {
+        display: grid;
+        padding: 5em 10%;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2em;
+    }
+    .latest-articles {
+        grid-column: 1/-1;
+        text-align: left;
+        padding-bottom: 1.5em;
+    }
+    article {
+        padding-bottom: 0;
+    }
+    footer {
+        padding: 3em 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .social-links {
+        grid-row: 2/3;
+    }
+    .footer-nav {
+        padding: 0;
+        grid-row: 1/3;
+        grid-column: 2/4;
+        ul {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        li {
+            text-align: left;
+        }
+        #col2 {
+            grid-column: 2/3;
+        }
+        #contact,
+        #about,
+        #blog {
+            grid-column: 1/2;
+        }
+        a {
+            color: hsl(233, 8%, 62%);
+        }
+        a:hover {
+            color: white;
+        }
+    }
+    .footer-btn {
+        grid-column: 4/5;
+        justify-self: flex-end;
+        text-align: center;
+        margin: 0;
+    }
+    .copyright {
+        grid-column: 4/5;
+        justify-self: flex-end;
+        font-size: .8rem
+    }
+    .attribution {
+        grid-column: 1/-1;
+        padding-top: 3em;
+    }
+    .logo-fnav {
+        align-self: center;
+    }
+}
