@@ -1,0 +1,102 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%); /* title clr & rating text clr & bg clr for quotes section */ 
+    --soft-pink: hsl(333, 80%, 67%);    /* text colour for 'Verified Buyer' */
+    --dark-grayish-magenta: hsl(302, 16%, 56%); /* header paragraph */
+    --light-grayish-magenta: hsl(300, 24%, 96%); /* background colour for ratings */
+    --white: hsl(0, 0%, 100%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+
+}
+.container{
+    height: 100vh;
+}
+header{
+    margin: 4rem 12%;
+}
+header h1{
+    text-align: center;
+    margin: 1.2rem;
+    color: var(--very-dark-magenta);
+}
+header p{
+    color: var(--dark-grayish-magenta);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+section .img{
+    display: flex;
+    justify-content: center;
+}
+section h4{
+    text-align: center;
+    margin-top: .5rem ;
+}
+/* *******************************************
+first  three column
+*/
+.three-with-stars{
+    margin: 1rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 2rem;
+    width: 18%;
+    height: auto;
+    border-radius: 1rem;
+
+}
+.profile article{
+    display: flex;
+    justify-content: space-between;
+    margin:0  20%;
+    flex-direction: column;
+    /* max-width: 50%; */
+    justify-content: center;
+    align-content: center;
+
+}
+ .image{
+    display: flex;
+    margin: 5% ;
+
+}
+.text{
+    margin: 5% ;
+    color: var(--white);
+
+}
+.sham{
+    background-color: var(--dark-grayish-magenta);
+    margin: 1rem;
+    border-radius: .6rem;
+
+}
+.name{
+    display: flex;
+padding-left: 1rem;
+justify-content: center;
+flex-direction: column;
+color: var(--white);
+
+}
+article img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+span{
+    color:var(--very-dark-magenta);
+}
+
+
+
